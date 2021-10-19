@@ -1,13 +1,16 @@
 body{
     margin: 0;
     padding: 0;
+    color: white;
+    box-sizing: border-box;
 }
+
 
 #header{
     display: flex;
     justify-content: center;
-    background-color: orange;
-    color: white;
+    background-color: white;
+    color: orange;
     border-bottom: white solid 2 px;
 }
 
@@ -15,50 +18,87 @@ body{
     text-align: center;
 }
 
+.question-container button{
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    color: darkgreen;
+    
+    }
 .question-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: orange;
+    padding: 5% 10% 0%;
+
+}
+
+
+.question-container #start-quiz{
+    margin-bottom: 3%;
+}
+
+.question-container img{
+    background-color: orange;
+    height: 200px;
+    width: 100%;
+}
+
+.question-container p {
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+.question-container < .question-item {
+    border: white 2px solid;
+}
+
+.choise-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items:center;
     border-bottom: white 2px solid;
     background-color: orange;
+    height: 50px;
 }
 
-.question-container item {
-    border: solid white 2px;
-}
-
-.question-container img{
-    width: 100%;
-    background-color: orange;
-    height: 200px;
-
-    
-}
-
-
-
-.choise-container{
+.choise-container button{
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    color:darkgreen;
     
+    }
+    .btn:hover {
+        background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+        background-color:#f6f6f6;
+    }
+    .btn:active {
+        position:relative;
+        top:1px;
+    }
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: orange 2px solid;
+.choise-container btn {
+    margin: 1px;
 }
 
-.item  {
-    border: solid orange 2 px;
-    flex: 25%;
-    background-color: thistle;
-}
 
-#photo {
-    background-color: thistle;
-    color: white;
-}
