@@ -9,13 +9,19 @@ body{
 #header{
     display: flex;
     justify-content: center;
-    background-color: white;
-    color: orange;
-    border-bottom: white solid 2 px;
+    background-color: orange;
+    color: white;
+    border-bottom: darkgreen 2px solid;
 }
 
 #header h1{
     text-align: center;
+}
+
+.game-area{
+    padding: 0 25%;
+    border: darkgreen 2px solid;
+    background-color: orange;
 }
 
 .question-container button{
@@ -37,11 +43,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    background-color: orange;
     padding: 5% 10% 0%;
 
-}
 
+}
 
 .question-container #start-quiz{
     margin-bottom: 3%;
@@ -55,13 +60,12 @@ body{
 
 .question-container p {
     font-size: larger;
-    color: white;
+    color: darkgreen;
     font-weight: bold;
+    font-size: 30px;
 }
 
-.question-container < .question-item {
-    border: white 2px solid;
-}
+
 
 .choise-container{
     display: flex;
@@ -79,11 +83,11 @@ body{
     border-radius: 6px;
     border: 1px solid #dcdcdc;
     display: flex;
-    margin: 2px;
+    margin: 10px;
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-    padding: 6px 24px;
+    padding: 8px 30px;
     color:darkgreen;
     
     }
